@@ -1,0 +1,28 @@
+# spz-entropy
+
+A high-performance entropy coding library based on the **SPZ v3** algorithm, designed for compatibility with the Khronos `KHR_gaussian_splatting_compression_spz_2` specification.
+
+## Key Features
+
+- **SPZ v3 Core**: Implements the latest SPZ v3 entropy coding algorithm for optimal compression ratio and speed.
+- **Khronos Ready**: Designed to be fully compatible with the upcoming `KHR_gaussian_splatting_compression_spz_2` glTF extension.
+- **Fast**: Optimized for modern CPUs with SIMD support (AVX2, NEON).
+- **Portable**: Cross-platform support (Linux, Windows, macOS).
+- **Flexible**: Supports both lossless and lossy entropy coding modes.
+
+## Getting Started
+
+### Prerequisites
+
+- C++17 or later
+- CMake 3.16+
+- A modern C++ compiler (GCC 9+, Clang 10+, MSVC 2019+)
+
+### Building
+
+```bash
+git clone https://github.com/spz-ecosystem/spz-entropy.git
+cd spz-entropy
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
